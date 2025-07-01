@@ -13,16 +13,15 @@ div#formcol1 {
 	
 	float:left;	
 	width: 100%;
+	
 }
 
 div#formcol1 label {
-	float:left;
 	width:8.3em;
 	text-align:left;
-	display:block;
+	display:inline-block;
 	padding-right:.3em;	
-	background:#E0E0DD;
-	clear:right;
+	background-color:#e0e0e0;
 	}
 	
 
@@ -34,13 +33,12 @@ div#formcol1 ul li {
 
 	
 div#formcol1 input {
-	
-	margin-left:1.5em;
-	text-align:left;
-	display:block;
-	clear:right;
-	background-color:#F4F4F4;
+	margin-left:0;
+	display: inline-block;
+	background:#FF9;
+
 	}
+	
 
 
 /* div for radio buttons and check boxes */
@@ -64,7 +62,10 @@ div#formcol1 input {
 	width:70%;
 }
 
-
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;}
+	
 		
 
 /* end of form css */
